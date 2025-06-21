@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./scr/*"],
+      "@/hooks/*": ["src/app/hooks/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "services/api.js", "src/app/hooks/useChat.ts", "src/app/gemini/page.tsx", "src/app/api/gemini/route.js", "src/app/api/openai/route.js", "src/app/openai/page.tsx", "src/app/api/claude/route.js", "src/app/api/ollama/route.js"],
+  "exclude": ["node_modules"]
+  
+
+}
